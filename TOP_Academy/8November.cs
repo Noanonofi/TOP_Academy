@@ -33,8 +33,7 @@ namespace Classwork_8_november
                     if (temp != value)
                     {
                         temp = value;
-                        PropertyEventArgs propertyEventArgs = new PropertyEventArgs();
-                        propertyEventArgs.PropertyName = nameof(value);
+                        PropertyEventArgs propertyEventArgs = new PropertyEventArgs { PropertyName = nameof(value) };
                         PropertyChanged?.Invoke(this, propertyEventArgs);
                     }
                 }
