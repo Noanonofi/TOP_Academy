@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
-using static Classwork_8_november.StudyClassWork;
 
 namespace Classwork_TOP_Academy
 {

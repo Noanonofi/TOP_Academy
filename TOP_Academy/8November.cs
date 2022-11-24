@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Classwork_8_november
+namespace Classwork_TOP_Academy
 {
     class StudyClassWork
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TOP_Academy
+namespace Classwork_TOP_Academy
 {
     class TranslateWord
     {
