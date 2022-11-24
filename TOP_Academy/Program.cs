@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using static Classwork_8_november.StudyClassWork;
 
-namespace Classwork_8_november
+namespace Classwork_TOP_Academy
 {
     #region ClassHello
     delegate void SendMessage(string message);
@@ -75,6 +77,66 @@ namespace Classwork_8_november
 
     #endregion
 
+    #region November 15 Task
+    public class Person1
+    {
+
+    }
+
+    class November15Prog
+    {
+        static void Main(string[] args)
+        {
+            //Необобщенные типы коллекции
+            var array = new ArrayList();
+            array.Add(55);
+            array.Add(12.3);
+            array.Add(new Person());
+            //-----------------------
+            var stack = new Stack();
+            stack.Push(5);
+            stack.Push(10);
+            stack.Pop();
+            var value = stack.Peek();
+            //-----------------------
+            var queue = new Queue();
+            queue.Enqueue(5);
+            queue.Dequeue();
+            //-----------------------
+            var hashtable = new Hashtable();
+            hashtable.Contains(5);
+            hashtable.Add("dog", new ArrayList());
+            if (hashtable.ContainsKey("dog"))
+            {
+                ((ArrayList)hashtable["dog"]).Add("");
+            }
+            //-----------------------
+
+            Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
+            dictionary["dog"].Add("Barsic");
+
+            foreach (var keyinpair in dictionary)
+            {
+                //dictionary.Values;
+                //keyinpair.Key;
+            }
+
+            var sortedList = new SortedList();
+
+            //Обобщенные типы коллекций
+            //ArrayList == new List<int>();
+            //Hashtable == Dictionary<Tkey, Tvalue>
+            //Stack == Stack<T>
+            //Queue = Queue<T>
+            //SortedList == SortedList<TKey, TValue>
+            //-------- == LinkedList<T>
+
+            //С потоками есть версии - ConcurentCollection
+        }
+    }
+
+    #endregion
+
     #region Main
     class Program
     {
@@ -112,7 +174,6 @@ namespace Classwork_8_november
             var action = new Action<string>(hello.Display);
             action += hello.SpellItOut;
             action("Hello");
-            */
 
             // ---- #region EventArgs
             /*            var person = new Person();
